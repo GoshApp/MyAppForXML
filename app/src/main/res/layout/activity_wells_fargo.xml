@@ -6,6 +6,7 @@
     android:id="@+id/linr_0"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="3"
     android:background="@android:color/white"
     android:orientation="vertical"
     tools:context="com.example.vova.myappforxml.MainActivity">
@@ -15,33 +16,36 @@
         android:layout_width="match_parent"
         android:layout_height="68dp"
         android:background="#af181e"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="6">
 
         <TextView
             android:id="@+id/txt_title"
-            android:layout_width="305dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_weight="6"
             android:fontFamily="sans-serif"
             android:gravity="center_vertical|center_horizontal"
-            android:paddingLeft="60dp"
+            android:paddingLeft="50dp"
             android:text="WELLS FARGO"
             android:textColor="#fbc708"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/img_menu"
+            android:id="@+id/ImageView"
             android:layout_width="wrap_content"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:layout_weight="1"
             app:srcCompat="@mipmap/ic_menu" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linr_2"
         android:layout_width="match_parent"
-        android:layout_height="184dp"
-        android:layout_margin="15dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:background="#424449"
         android:orientation="vertical"
         android:padding="10dp"
@@ -196,5 +200,6 @@
         android:id="@+id/img_bottom"
         android:layout_width="match_parent"
         android:layout_height="267dp"
+        android:layout_weight="1"
         app:srcCompat="@drawable/bottom_img" />
 </LinearLayout>
