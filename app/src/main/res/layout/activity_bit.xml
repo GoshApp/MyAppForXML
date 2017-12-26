@@ -6,36 +6,9 @@
     android:id="@+id/linr_0"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#212931"
     android:orientation="vertical"
     tools:context="com.example.vova.myappforxml.MainActivity">
-
-    <LinearLayout
-        android:id="@+id/linr_1"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#0a2e6a"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/ImageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:paddingLeft="10dp"
-            app:srcCompat="@mipmap/ic_back_er" />
-
-        <TextView
-            android:id="@+id/txt_title"
-            android:layout_width="305dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center_vertical|center_horizontal"
-            android:paddingRight="30dp"
-            android:text="Manual Paring"
-            android:textColor="@android:color/white" />
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linr_2"
@@ -46,11 +19,49 @@
         android:padding="10dp"
         android:weightSum="5">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/bitfinex" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Ввести ключ вручную или \nсчитать QR-код" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/qr" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Need help to login?"
+            android:textColor="#89e24a"
+            android:textStyle="normal" />
+
+
         <LinearLayout
             android:id="@+id/linr_2_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
             android:weightSum="1">
 
             <EditText
@@ -58,11 +69,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="@color/colorPrimaryDark"
+                android:backgroundTint="#c30703"
                 android:ems="10"
-                android:hint="Wallet ID"
+                android:hint="Ключь API *"
                 android:inputType="textPersonName"
-                android:textColorHint="@color/textColor"
+                android:textColor="@color/textColor"
+                android:textColorHint="#c30703"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -79,6 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:paddingBottom="15dp"
                 android:weightSum="1">
 
                 <EditText
@@ -86,23 +99,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:backgroundTint="#c30703"
                     android:ems="10"
-                    android:hint="Password"
+                    android:hint="Секретный ключь API *"
                     android:inputType="textPersonName"
-                    android:textColorHint="@color/textColor"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="#c30703"
                     android:textSize="16sp" />
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="30dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@mipmap/ic_eye" />
             </LinearLayout>
 
         </LinearLayout>
 
-
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="0.05"
+            android:background="@drawable/layout_bg_btn_gray"
+            android:text="ДАЛЕЕ"
+            android:textColor="@android:color/darker_gray" />
     </LinearLayout>
 
     <LinearLayout
@@ -120,13 +135,6 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:layout_weight="0.05"
-            android:background="@drawable/layout_bg_btn"
-            android:text="SING UP" />
 
     </LinearLayout>
 </LinearLayout>

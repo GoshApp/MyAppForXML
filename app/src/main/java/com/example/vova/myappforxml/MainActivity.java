@@ -8,6 +8,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_xapo_bitcoin_wallet_vault);
+        setContentView(R.layout.activity_lbw);
         }
 }
